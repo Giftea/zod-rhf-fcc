@@ -16,6 +16,11 @@
   }
 }
 
+h1 {
+  font-size: 28px;
+  font-weight: bol;
+}
+
 body {
   color: rgb(var(--background-start-rgb));
   background: rgba(224, 224, 247, 0.751);
