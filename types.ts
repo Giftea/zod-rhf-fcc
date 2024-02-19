@@ -37,16 +37,9 @@ export type FormData = {
   export type FormFieldProps = {
     type: string;
     placeholder: string;
-    name: ValidFieldNames;
+    name: keyof FormData;
     register: UseFormRegister<FormData>;
     error: FieldError | undefined;
     valueAsNumber?: boolean;
   };
   
-
-  export type ValidFieldNames =
-  | "email"
-  | "githubUrl"
-  | "yearsOfExperience"
-  | "password"
-  | "confirmPassword";
